@@ -35,13 +35,13 @@ const mapDispatchToProps = dispatch => ({
 //   return bindActionCreators({ fetchQuestions }, dispatch);
 // }
 
-QuestionsList.propTypes = {
-  questions: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    question: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }).isRequired,
-  fetchQuestions: PropTypes.func.isRequired,
-}
+// QuestionsList.propTypes = {
+//   questions: PropTypes.shape({
+//     id: PropTypes.number.isRequired,
+//     question: PropTypes.string.isRequired,
+//     description: PropTypes.string.isRequired,
+//   }).isRequired,
+//   fetchQuestions: PropTypes.func.isRequired,
+// }
 
 export default connect(mapStateToProps, mapDispatchToProps)(QuestionsList);

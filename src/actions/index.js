@@ -11,6 +11,5 @@ export const fetchQuestions = () => {
         .then(questions => dispatch(fetchQuestionsSuccess(questions)))
       }
     , 3000);
-
   }
 }
