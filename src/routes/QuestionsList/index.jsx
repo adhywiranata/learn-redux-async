@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 import QuestionItem from './QuestionItem';
 import { fetchQuestions } from '../../actions';
@@ -29,6 +30,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchQuestions: () => dispatch(fetchQuestions())
 });
+
+// const mapDispatchToProps = dispatch => {
+//   return bindActionCreators({ fetchQuestions }, dispatch);
+// }
 
 QuestionsList.propTypes = {
   questions: PropTypes.shape({
