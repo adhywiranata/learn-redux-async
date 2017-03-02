@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "what is React?",
+      "description": "React is something good!"
+    },
+    {
+      "id": 2,
+      "question": "what is Redux?",
+      "description": "Redux is something cool!"
+    },
+    {
+      "id": 3,
+      "question": "what is Redux Thunk?",
+      "description": "Redux is something awesome!"
+    }
+  ]
+}
